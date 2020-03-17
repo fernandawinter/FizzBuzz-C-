@@ -8,6 +8,11 @@ namespace Fizzbuzz.Src.Services
     {
         public string CalculateFizzbuzz(int i)
         {
+            if (i == 0)
+            {
+                return "0";
+            }
+
             if (i % 3 == 0 && i % 5 == 0)
             {
                 return "Fizzbuzz";
